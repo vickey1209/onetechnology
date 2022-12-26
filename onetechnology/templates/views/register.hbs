@@ -1,0 +1,36 @@
+{{>header}}
+{{>navbar}}
+<form class="signup-form" action="/register" method="POST">
+
+      
+      <div class="form-body">
+
+       
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name </label>
+            <input type="text" id="firstname" class="form-input" name="firstname" placeholder="enter your first name" required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label>
+            <input type="text" id="lastname" class="form-input" name="lastname" placeholder="enter your last name" />
+          </div>
+        </div>
+
+  
+        <div class="form-group">
+          <label for="email" class="label-title">Email</label>
+          <input type="email" id="email" class="form-input" name="email" placeholder="enter your email" required="required">
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password </label>
+            <input type="password" id="password" class="form-input" name="password" placeholder="enter your password" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Confirm Password </label>
+            <input type="password" class="form-input" id="confirm-password" name="confirmpassword" placeholder="enter your password again" required="required">
+          </div>
+        </div>
+
+{{>footer}}
